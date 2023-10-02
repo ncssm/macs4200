@@ -1,0 +1,68 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+\usepackage[margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+\begin{center}
+Introduction to Cryptography
+
+Project 2
+\end{center}
+
+\begin{enumerate}
+\item Write a function in Python that 
+\begin{enumerate}
+\item accepts a message (string), a multiplicative key (integer), and boolean variable as arguments;
+\item checks that the key is valid (mod $26$);
+\item performs the multiplicative encryption to each letter modulo $26$ if the boolean variable is TRUE and performs the multiplicative decryption to each letter modulo $26$ if the boolean variable is FALSE;
+\item returns the encrypted/decrypted message as a string.
+\end{enumerate}
+
+\item Write a function in Python that 
+\begin{enumerate}
+\item accepts an integer message, multiplicative key (integer), a modulus $n$ (integer), and a boolean variable as arguments;
+\item checks that the key is valid (mod $n$);
+\item checks that the modulus is larger than the  integer;
+\item performs the multiplicative encryption to the integer message modulo $n$ if the boolean variable is TRUE and performs the multiplicative decryption to the integer message modulo $n$ if the boolean variable is FALSE;
+\item prints the encrypted/decrypted integer message.
+\end{enumerate}
+
+\item
+\begin{enumerate}
+\item Show that $37$ has a multiplicative inverse modulo $2798989898$
+\item Find the multiplicative inverse of $37$ modulo $2798989898$
+\item Decrypt the following ciphertext message, which was encrypted by performing an additive shift on each letter, converting the plaintext message into five-letter blocks, and then multiplying each block by $37$ modulo $2798989898$. $$1811758588 \text{  } 853934819 \text{  } 2412335942$$
+\end{enumerate}
+
+\item The {\bf Affine Cipher} is an encryption scheme which combines the Additive and Multiplicative Caesar ciphers. To encrypt a plaintext message with an affine cipher, we need an additive key $A$, a multiplicative key $M$, and a modulus $n$. Then given a character {\it char} in the message, we encrypt {\it char} by computing $M*char+A \mod n$.
+
+Write a function in Python that 
+\begin{enumerate}
+\item accepts a lowercase message (string), a multiplicative key (integer), an additive key (integer) and a boolean variable as arguments;
+\item checks that the keys are valid (mod $26$);
+\item performs the affine encryption to each letter modulo $26$ if the boolean variable is TRUE and performs the affine decryption to each letter modulo $26$ if the boolean variable is FALSE;
+\item returns the encrypted/decrypted message as a string.
+\end{enumerate}
+
+\item Recall that Euler's Totient Function, $\phi(n)$ computes the number positive integers less than $n$ which are relatively prime to $n$. We observed in a previous assignment that if $p$ and $q$ are distinct prime numbers, then $\phi(p)=p-1$ and $\phi(pq)=(p-1)(q-1)$. Suppose that you are given a large integer $n$, and you know that it is factorable as $n=pq$, but you are not given the distinct prime numbers $p$ and $q$. Can you compute $\phi(pq)$? Why or why not?
+\end{enumerate}
+
+
+\end{document}

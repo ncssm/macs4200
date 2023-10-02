@@ -1,0 +1,51 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Project 1
+\end{center}
+
+
+
+\begin{enumerate}
+\item Implement a program in Python that 
+\begin{enumerate}
+\item Prompts the user to choose whether to encrypt or decrypt a message;
+\item prompts the user for a cipher method (additive Caesar or one-time pad);
+\item prompts the user for an appropriate key depending on the chosen method;
+\item prompts the user for the plaintext or ciphertext;
+\item turns all letters to upper case and skips over spaces and punctuation when performing the encryption/decryption;
+\item prints the encrypted or decrypted message as a string.
+\end{enumerate}
+\item Consider the following ciphertext, which was obtained using an additive Caesar shift: ``FTQ QZQYK UE AHQD FTQ YAGZFMUZ". Write a program that tries all decryption keys, and then use your program to decrypt the message. Why is such a method intractable for a ciphertext obtained from using a one-time pad?
+\end{enumerate}
+\vfill
+
+
+\end{document}
