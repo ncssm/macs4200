@@ -1,0 +1,53 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Frequency Analysis
+\end{center}
+
+
+\begin{enumerate}
+\item Write a function in Python that
+\begin{enumerate}
+\item takes in a message as a string (this can be pre-stored in Python, you do not need to prompt the user);
+\item returns a list whose entries are the number of times each corresponding letter appears in the message (ordered according to the usual alphabet).
+\end{enumerate}
+\item Write a function in Python that uses the list from the previous problem to generate a new list whose entries are the {\bf frequency} (as a decimal) each letter appears in the input message.
+\item Use your frequency analysis function to analyze the following text, which we saw on the first day of class. Does it allow you to guess any substitutions?
+
+FZW GBYW FA VSDUAJWB DWUBWFD SD VWWTEO SMYBQSMWV SM ZGNQM MQFGBW; WJWM FZW EWQDF UGBSAGD NSMV SD BAGDWV RO FZW TBANSDW AX DZQBSMY IMAKEWVYW KSFZZWEV XBAN AFZWBD. DANW QBW XABFGMQFW WMAGYZ FA XSMV Q CAR KZSUZ UAMDSDFD SM FZW DAEGFSAM AX NODFWBSWD, KZWFZWB SF RW FZW TZODSUSDF KZA FBQUID VAKM Q ZSFZWBFA GMIMAKM MGUEWQB TQBFSUEW AB FZW TAESUWNQM KZA VWFWUFD Q UBSNSMQE. RGF NADF AX GD QBW VBSJWM FA DGRESNQFW FZSD GBYW RO FZW DAEJSMY AX QBFSXSUSQE TGPPEWD VWJSDWV XAB AGB WMFWBFQSMNWMF. VWFWUFSJW DFABSWD AB UBADDKABV TGPPEWD UQFWB XAB FZW NQCABSFO; FZW DAEGFSAM AX DWUBWF UAVWD NQO RW FZW ZARRO AX FZW XWK.
+
+-CAZM UZQVKSUI
+
+\item What are the limitations of using frequency analysis when decrypting a ciphertext message obtained using a substitution cipher?
+\end{enumerate}
+\vfill
+
+
+\end{document}

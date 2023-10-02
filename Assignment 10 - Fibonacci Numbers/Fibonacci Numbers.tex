@@ -1,0 +1,56 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Fibonacci Numbers
+\end{center}
+
+
+\begin{enumerate}
+\item Fibonacci Numbers are the sequence defined recursively by 
+\begin{align*}
+F_0&=1\\
+F_1&=1\\
+F_n&=F_{n-1}+F_{n-2} \text{ where } n\geq2
+\end{align*}
+\begin{enumerate}
+\item Write a function in Python that accepts an integer $n$ as an input and returns the value of $F_n$.
+\item Using your Fibonacci number generator, demonstrate that $$\lim_{n\rightarrow\infty} \frac{F_n}{F_{n-1}}=\frac{1+\sqrt{5}}{2}$$
+
+Note: $\frac{1+\sqrt{5}}{2}$ is also called the Golden Ratio.
+\item Write a program to make a list of all prime Fibonacci numbers less than one million.
+\item Write a function in Python that returns the number of digits in an integer $n$. Use your function to find the smallest Fibonacci number with $1000$ digits.
+\item Compute $gcd(F_3,F_2)$, $gcd(F_4,F_3)$, $gcd(F_5, F_4)$, and $gcd(F_6,F_5)$. Make a conjecture for the value of $gcd(F_{n+1},F_n)$.
+\end{enumerate}
+
+\end{enumerate}
+\vfill
+
+
+\end{document}

@@ -1,0 +1,59 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+\usepackage[margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+The Extended Euclidean Algorithm
+\end{center}
+
+
+
+\begin{enumerate}
+\item Write a function in Python which 
+\begin{enumerate}
+\item accepts as arguments three integers $a$, $b$, and $n$;
+\item prints an error message if there is no solution to the Diophantine equation $AX+BY=n$;
+\item returns a list of the form $\left[X,Y,count,time\right]$ where the pair $(X,Y)$ is a solution to the equation $AX+BY=n$, the third element is the number of iterations needed in the Euclidean algorithm, and the fourth element is the time taken to run the iterations. 
+\end{enumerate} 
+\item Use your function from the previous problem to solve the Diophantine equation $aX+bY=n$ for each set of integers below. Record a solution, computer run time and iteration count for each triple. 
+\begin{enumerate}
+\item $a=13259581529781261112802, b=1894225932825894444686, n=35$
+\item $a=354224848179261915075, b=573147844013817084101, n=5$
+\item $a=573147844013817084101, b=927372692143078999176, n= 21$
+\end{enumerate}
+
+\item Write a function in Python which 
+\begin{enumerate}
+\item accepts as arguments two integers $A$ and $n$;
+\item returns the multiplicative inverse of $A \mod n$ if such a number exists, and returns FALSE otherwise.
+\end{enumerate} 
+
+\end{enumerate}
+
+
+\end{document}

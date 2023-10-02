@@ -1,0 +1,63 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+\usepackage[margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+File Input/Output and File Encryption/Decryption
+\end{center}
+
+
+
+\begin{enumerate}
+\item Write a function in Python that
+\begin{enumerate}
+\item accepts a text file as an argument;
+\item opens and reads the text file;
+\item returns a list whose entries are the number of times each corresponding letter appears in the message (ordered according to the usual alphabet).
+\end{enumerate}
+\item Use the function from the previous question along with your work from the ``Frequency Analysis" assignment to generate a list whose entries are the  frequency (as a decimal) each letter appears in the text file ``WarAndPeace.txt". 
+\item Write a function in Python that
+\begin{enumerate}
+\item accepts a text file and a substitution key as arguments;
+\item opens and reads the text file;
+\item turns all letters to upper case, applies a substitution cipher to the text, and outputs the result to a file named ``SuperSecret.txt".
+\end{enumerate}
+\item Use the function from the previous problem to encrypt the text file ``WarAndPeace.txt" using a valid substitution cipher of your choice.
+\item Suppose we wanted to encrypt the text file ``WarAndPeace.txt" using a one-time pad. How long would the key need to be?
+\item Write a function in Python that
+\begin{enumerate}
+\item accepts a text file as an argument;
+\item opens and reads the text file;
+\item converts the text into five-letter numerical blocks;
+\item multiplies each five-letter block by $37$ modulo $2798989898$, and outputs the result to a file named ``MysteryText.txt".
+\end{enumerate}
+\item Use the function from the previous problem to encrypt the text file ``WarAndPeace.txt".
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+\usepackage[margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Diffie-Hellman Key Exchange
+\end{center}
+
+
+
+\begin{enumerate}
+\item Suppose we know integers $a$, $c$, and $n$ satisfying $c\equiv a^b\mod n$ for some unknown integer exponent $b$. Finding the value of $b$ is known as the {\bf Discrete Logarithm}. Use Python to find $b$ in each of the following equations. Record the run-time for each of the computations.
+\begin{enumerate}
+\item $7\equiv 5^b\mod 37$
+\item $7\equiv 5^b\mod 157$
+\item $7\equiv 5^b\mod 1607$
+\item $7\equiv 5^b\mod 15287$
+\item $7\equiv 5^b\mod 150053$
+\item $7\equiv 5^b\mod 1500043$
+\end{enumerate}
+\item Use Desmos or a calculator to plot the computation time as a function of the answer $b$ that you found in each part of the previous problem. Using an appropriate regression line, approximate how long it would take to solve $7\equiv 5^b\mod n$ if $b<n$ and $b$ had $100$ digits.
+\item Suppose Alice and Bob want to use Diffie-Hellman to agree upon a key which will be used to encode a secret message. Suppose they (publicly) agree to use the prime $1500043$ and the primitive root $5$.
+\begin{enumerate}
+\item Verify that $5$ is indeed a primitive root of $1500043$.
+\item If Alice uses the exponent $a=1234567$, what is the public key they send to Bob?
+\item If Bob uses the exponent $b=1010101$, what is the public key they send to Alice?
+\item Using what is known to Alice, compute the secret key.
+\item Using what is known to Bob, compute the secret key.
+\end{enumerate}
+\item Suppose Alice and Bob want to use Diffie-Hellman to agree upon a key which will be used to encode a secret message. Suppose they (publicly) agree to use the prime $p$ and the primitive root $a$. Suppose also that Alice's public key and Bob's public key are intercepted by Eve the eavesdropper. If Eve now pretends to be Bob when communicating with Alice, and Eve pretends to be Alice when communicating with Bob, how can Eve ensure that they can decrypt the secret messages between Alice and Bob without either Alice or Bob knowing? This is called the {\bf Man-in-the-Middle attack}.
+\item Suppose three individuals want to use Diffie-Hellman to agree upon a key which will be used to encode secret messages. Suppose they (publicly) agree to use the prime $p$ and the primitive root $a$. If each individual chooses their own secret exponent, explain how to modify Diffie-Hellman so that they all can agree on a secret key.
+\end{enumerate}
+
+
+\end{document}

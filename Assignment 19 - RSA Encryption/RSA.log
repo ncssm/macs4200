@@ -1,0 +1,305 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.8.16)  29 APR 2022 11:27
+entering extended mode
+**./RSA.tex
+(RSA.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-07-12>
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsart.cl
+s
+Document Class: amsart 2020/05/29 v2.20.6
+\linespacing=\dimen138
+\normalparindent=\dimen139
+\normaltopskip=\skip47
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.
+sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.
+sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.s
+ty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen140
+))
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.s
+ty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.s
+ty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count182
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count183
+\leftroot@=\count184
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count185
+\DOTSCASE@=\count186
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count187
+\c@MaxMatrixCols=\count188
+\dotsspace@=\muskip16
+\c@parentequation=\count189
+\dspbrk@lvl=\count190
+\tag@help=\toks17
+\row@=\count191
+\column@=\count192
+\maxfields@=\count193
+\andhelp@=\toks18
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks19
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 397
+.
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfont
+s.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+\copyins=\insert199
+\abstractbox=\box52
+\listisep=\skip51
+\c@part=\count194
+\c@section=\count195
+\c@subsection=\count196
+\c@subsubsection=\count197
+\c@paragraph=\count198
+\c@subparagraph=\count266
+\c@figure=\count267
+\c@table=\count268
+\abovecaptionskip=\skip52
+\belowcaptionskip=\skip53
+\captionindent=\dimen149
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks26
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb
+.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+x.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.
+sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphic
+s.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.st
+y
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\gra
+phics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdf
+tex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.s
+ty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read2
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometr
+y.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.s
+ty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.st
+y
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count269
+\Gm@cntv=\count270
+\c@Gm@tempcnt=\count271
+\Gm@bindingoffset=\dimen152
+\Gm@wd@mp=\dimen153
+\Gm@odd@mp=\dimen154
+\Gm@even@mp=\dimen155
+\Gm@layoutwidth=\dimen156
+\Gm@layoutheight=\dimen157
+\Gm@layouthoffset=\dimen158
+\Gm@layoutvoffset=\dimen159
+\Gm@dimlist=\toks30
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometr
+y.cfg))
+\c@theorem=\count272
+\c@sublemma=\count273
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3back
+end-pdftex.def
+File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count274
+\l__pdf_internal_box=\box53
+) (RSA.aux)
+\openout1 = `RSA.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp
+-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count275
+\scratchdimen=\dimen160
+\scratchbox=\box54
+\nofMPsegments=\count276
+\nofMParguments=\count277
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count278
+\MPscratchDim=\dimen161
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
+\everyMPtoPDFconversion=\toks32
+)
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
+topdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\philip.benge\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopd
+f-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-22.0pt
+* \headheight=8.0pt
+* \headsep=14.0pt
+* \topskip=10.0pt
+* \footskip=12.0pt
+* \marginparwidth=90.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=7.0pt plus 11.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+[1{C:/Users/philip.benge/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+(RSA.aux) ) 
+Here is how much of TeX's memory you used:
+ 3426 strings out of 478870
+ 46788 string characters out of 2845518
+ 355514 words of memory out of 3000000
+ 21168 multiletter control sequences out of 15000+600000
+ 410073 words of font info for 54 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 71i,5n,80p,374b,196s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/philip.benge/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><C:/Users/philip.benge/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/philip.benge/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/philip.beng
+e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Us
+ers/philip.benge/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr8.pfb><C:/Users/philip.benge/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr9.pfb><C:/Users/philip.benge/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on RSA.pdf (1 page, 79198 bytes).
+PDF statistics:
+ 41 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

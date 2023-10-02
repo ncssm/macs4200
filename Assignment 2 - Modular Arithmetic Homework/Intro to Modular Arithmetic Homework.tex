@@ -1,0 +1,70 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Homework 1
+\end{center}
+
+Answer the following questions.
+
+\begin{enumerate}
+\item Determine which of the following statements are true and which are false.
+\begin{enumerate}
+\item $144\equiv34\mod 10$
+\item $99\equiv -1 \mod 8$
+\item $144\equiv 12\mod 7$
+\item $20\equiv -20\mod 40$
+\end{enumerate}
+%\vspace{10pt}
+%\item 
+%\begin{enumerate}
+%\item Find the remainder whenever $137$ is %divided by $13$.
+%\item Find the remainder whenever $96$ is %divided by $13$.
+%\item Given that $13152=137\times96$, find the %remainder whenever $13152$ is divided by $13$. 
+%\end{enumerate}
+\vspace{10pt}
+\item Write out several integers $x$ satisfying $x\equiv 1\mod 2$. What type of integers satisfy this equation?
+\vspace{10pt}
+\item Determine whether the following statements are true or false. If a statement is true, explain why. If it is false, give a counterexample.
+\begin{enumerate}
+\item All numbers that are divisible by $5$ are also divisible by $10$.
+\item All number that are divisible by $10$ are also divisible by $5$.
+\item The remainder whenever an integer $x$ is divided by $5$ is the same as the remainder whenever $x$ is divided by $10$.
+\end{enumerate}
+%\vspace{10pt}
+%\item Show that $\left( x+y\right)^3\equiv x^3+y^3 \mod 3$.
+\vspace{10pt}
+\item Encrypt the following message by shifting each letter in the alphabet by $13$ to the right. Message: I LOVE MATH.
+\vspace{10pt}
+\item Suppose the following encrypted message was obtained by shifting each letter of the original message by $5$ to the right. What is the original message? Encrypted message: DTZ SJAJW PSTB BMJS DTZ SJJI XJHWJHD.
+\end{enumerate}
+\vfill
+
+
+\end{document}

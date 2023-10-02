@@ -1,0 +1,73 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Euclidean Algorithm Program
+\end{center}
+
+
+\begin{enumerate}
+\item Write a function in Python which 
+\begin{enumerate}
+\item accepts as arguments two integers $a$ and $b$;
+\item returns a list whose first element is the $gcd(a,b)$, whose second element is the number of iterations needed in the Euclidean algorithm, and whose third element is the time taken to run the iterations. 
+\end{enumerate} 
+\item Use your function to find the greatest common divisor of the pairs of numbers below. Record the computer run time and iteration count for each set.
+\begin{enumerate}
+\item $a=135301852344706746049, b=947112966412947222343$
+\item $a=354224848179261915075, b=573147844013817084101$
+\item $a=573147844013817084101, b=927372692143078999176$
+\end{enumerate}
+\item Write a function in Python which 
+\begin{enumerate}
+\item accepts a positive integer $n$ as an argument;
+\item returns a list of all positive integers which are less than $n$ and relatively prime to $n$.
+\end{enumerate}
+\item Euler's totient function is the function $\phi(n)$ which gives the number of positive integers less than $n$ which are relatively prime to $n$. Use your function in the previous problem to find the following values.
+\begin{enumerate}
+\item $\phi(2)$
+\item $\phi(3)$
+\item $\phi(5)$
+\item $\phi(7)$
+\item $\phi(11)$
+\item $\phi(6)$
+\item $\phi(10)$
+\item $\phi(14)$
+\item $\phi(15)$
+\item $\phi(21)$
+\item $\phi(33)$
+\item $\phi(35)$
+\end{enumerate}
+\item Conjecture a formula to compute $\phi(p)$ where $p$ is a prime number.
+\item Conjecture a formula to compute $\phi(pq)$ where $p$ and $q$ are distinct prime numbers.
+\end{enumerate}
+\vfill
+
+
+\end{document}

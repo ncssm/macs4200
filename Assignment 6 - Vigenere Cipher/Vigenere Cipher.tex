@@ -1,0 +1,51 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Vigenere Cipher
+\end{center}
+
+
+\begin{enumerate}
+\item If a one-time pad is shorter than the message, one can simply repeat the pad until the message is complete. The method is called a Vigenere cipher. For example, we can encrypt the plain text message ILOVEMATHEMATICS using the Vigenere key CAT by computing ``ILOVEMATHEMATICS"+``CATCATCATCATCATC" to obtain ``KLHXEFCTAGMTVIVU".
+
+Implement a program in Python that 
+\begin{enumerate}
+\item Prompts the user whether to encrypt or decrypt a message;
+\item prompts the user for the plaintext or ciphertext message;
+\item prompts the user for an appropriate key and implements the Vigenere cipher if the key is shorter than the message and implements the one-time pad if the key is longer than the message;
+\item skips over punctuation and spaces whenever performing the encryption/decryption;
+\item prints the encrypted or decrypted message as a string.
+\end{enumerate}
+
+\end{enumerate}
+\vfill
+
+
+\end{document}

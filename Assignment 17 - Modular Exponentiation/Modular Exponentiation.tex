@@ -1,0 +1,76 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+\usepackage[margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Modular Exponentiation and the Repeated Squaring Algorithm
+\end{center}
+
+
+
+\begin{enumerate}
+\item By hand, use the repeated squaring algorithm to compute $18^{156}\mod 37$.
+\item Let $x$ and $n$ be positive integers. Using the repeated squaring algorithm, determine how many squarings are required to compute each of the following quantities.
+\begin{enumerate}
+\item $x^4\mod n$
+\item $x^6\mod n$
+\item $x^8\mod n$
+\item $x^{12}\mod n$
+\item $x^{1024}\mod n$
+\item $x^k\mod n$ where $k$ is a positive integer.
+\end{enumerate}
+\item By hand, convert the base 2 integer $111010_{2}$ to base 10. 
+\item By hand, convert the base 10 integer $1555_{10}$ to base 2.
+\item The {\bf bin(n)} function in Python can be used to determine the binary representation of an integer $n$. Use the bin(n) function to verify your answer in the previous question. 
+\item Without using the bin(n) function, write a function in Python which 
+\begin{enumerate}
+\item accepts a positive integer $n$ as an argument;
+\item return the binary representation of $n$ as an integer.
+\end{enumerate}
+\item The {\bf pow(a,b,n)} function in Python can be used to compute $a^b\mod n$ using the repeated squaring algorithm. Use the pow(a,b,n) function (and a for-loop) to compute the following values for every value of $a$ satisfying $1\leq a< n$.
+\begin{enumerate}
+\item $a^{6}\mod 7$
+\item $a^{16}\mod 17$
+\item $a^{17}\mod 18$
+\item $a^{18}\mod 19$
+\item $a^{19}\mod 20$
+\end{enumerate}
+\item Use your results from the previous exercise to make a conjecture about when $a^{n-1} \equiv 1\mod n$. Be sure to think about a necessary condition on $n$. This result is called {\bf Fermat's Little Theorem}.
+\item Recall that $\phi(n)$ is Euler's Totient function and returns the number of positive integers less than $n$ which are relatively prime to $n$. Use the pow(a,b,n) function (and a for-loop) to compute the following values for every value of $a$ satisfying $1\leq a< n$. 
+\begin{enumerate}
+\item $a^{\phi(7)}\mod 7$
+\item $a^{\phi(17)}\mod 17$
+\item $a^{\phi(18)}\mod 18$
+\item $a^{\phi(19)}\mod 19$
+\item $a^{\phi(20)}\mod 20$
+\end{enumerate}
+\item Use your results from the previous exercise to make a conjecture about when $a^{\phi(n)} \equiv 1\mod n$. Be sure to think about a necessary condition on $a$. This result is called {\bf Euler's Theorem}.
+\end{enumerate}
+
+
+\end{document}

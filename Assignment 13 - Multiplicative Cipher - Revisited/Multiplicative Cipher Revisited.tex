@@ -1,0 +1,65 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Multiplicative Cipher - Revisited
+\end{center}
+
+
+\begin{enumerate}
+\item Write a function in Python that 
+\begin{enumerate}
+\item accepts a lowercase message (string) and a multiplicative key (integer) as arguments;
+\item checks that the key is valid (mod $26$);
+\item performs the multiplicative encryption to each letter modulo $26$;
+\item returns the encrypted message.
+\end{enumerate}
+\item Write a function in Python that 
+\begin{enumerate}
+\item accepts a plaintext integer, multiplicative key (integer), and a modulus $n$ (integer) as arguments;
+\item checks that the key is valid (mod $n$);
+\item checks that the modulus is larger than the plaintext integer;
+\item performs the multiplicative encryption to the integer modulo $n$;
+\item prints the encrypted integer.
+\end{enumerate}
+\item By hand, encrypt the number $14$ with a modulus of $13$ and a multiplicative key of $2$. By hand, encrypt the number $1$ with a modulus of $13$ and a multiplicative key of $2$. What happens if the modulus is less than or equal to the plaintext integer?
+\item Use your function from problem 2 to encrypt the number $1234567$ by multiplying by the key $A=319765$ using the modulus $27989898$.
+\item Let $A$ be an integer. A {\bf multiplicative inverse of $A$ mod $n$} is an integer $x$ such that $Ax\equiv 1 \mod n$. 
+\begin{enumerate}
+\item Let $A=2$. Test each value of $x$ where $0\leq x \leq 25$ and determine whether there exists a multiplicative inverse of $A$ modulo $26$ (please don't do this manually).
+\item Repeat the above exercise for each value of $A$ where $0\leq A\leq 25$ (please don't do this manually).
+\item Make a conjecture regarding which values of $A$ have a multiplicative inverse modulo $26$.
+\item Make a conjecture regarding which values of $A$ have a multiplicative inverse modulo $n$.
+\end{enumerate}
+\item Verify that the multiplicative inverse of $A=319765$ is $27698239$ modulo $27989898$. How can this be used to decrypt your answer in problem 4?
+\end{enumerate}
+\vfill
+
+
+\end{document}

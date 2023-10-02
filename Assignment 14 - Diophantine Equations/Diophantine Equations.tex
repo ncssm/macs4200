@@ -1,0 +1,75 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Diophantine Equations
+\end{center}
+
+
+\begin{enumerate}
+\item Determine whether the following Diophantine equations have solutions. You do not need to solve the equations.
+\begin{enumerate}
+\item $10X+15Y=1$
+\item $9X+16Y=1$
+\item $24X+56Y=1$
+\end{enumerate}
+\item Find integers $X$ and $Y$ that solve the following Diophantine equations, or show that they do not have a solution.
+\begin{enumerate}
+\item $223X+75Y=1$
+\item $35X+49Y=1$
+\item $7X+24Y=1$
+\end{enumerate}
+\item Find an integer $X$ that satisfy the following equations, or show that no such number exists. 
+\begin{enumerate}
+\item $75X\equiv 1\mod 223$
+\item $35X\equiv 1 \mod 49$
+\item $7X\equiv 1 \mod 24$
+\end{enumerate}
+\item
+\begin{enumerate}
+\item Find a solution to the Diophantine equation $13X+8Y=1$.
+\item Find a solution to the Diophantine equation $21X+13Y=1$.
+\item Based on your answers, make a conjecture for a solution to the following Diophantine equation $F_{n+1}X+F_{n}Y=1$.
+\end{enumerate}
+\item If $(\widetilde{X},\widetilde{Y})$ is a solution to the Diophantine equation $AX+BY=1$, what is a solution to the Diophantine equation $AX+BY=2$? What about $AX+BY=n$ where $n$ is an integer?
+\item You have a $7$-liter bucket and a $24$-liter bucket. Using these, you can add or remove exactly $7$ or $24$ liters of water at a time into or out of a large tank. If the large tank begins empty, explain how you can use the buckets to end with exactly $2$ liters of water in the large tank.
+\item What if you instead have a $4$-liter bucket and a $6$-liter bucket. Can you use the buckets to end with exactly $1$ liter of water in the large tank? What about $2$ liters?
+\item If $(\widetilde{X},\widetilde{Y})$ is a solution to the Diophantine equation $AX+BY=1$, and if $t$ is any integer, show that $(\widetilde{X}+Bt,\widetilde{Y}-At)$ is also a solution to this Diophantine equation.
+\item Use the result from the previous problem to find infinitely many solutions to the following Diophantine equations, if a solution exists.
+\begin{enumerate}
+\item $223X+75Y=1$
+\item $35X+49Y=1$
+\item $7X+24Y=1$
+\end{enumerate}
+\item (Optional Challenge Problem): When Dr. Benge cashed a check at his bank, the teller mistook the number of cents for the number of dollars and vice versa. Unaware of this, Dr. Benge spent $68$ cents and then noticed to his surprise that he had twice the amount of the original check. Determine the smallest value for which the check could have been written.
+\end{enumerate}
+\vfill
+
+
+\end{document}

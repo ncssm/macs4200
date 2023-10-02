@@ -1,0 +1,49 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+One-Time Pad
+\end{center}
+
+Answer the following questions.
+
+\begin{enumerate}
+\item A one-time pad is an encryption technique that adds a different key to each letter. For example, if the plain text message that we wish to encrypt is $DOLPHIN$, and we use a one time pad of $XYHSNET$, then we compute $D+X$, $O+Y$, $L+H$, $P+S$, $H+N$, $I+E$, and $N+T$ to obtain an encrypted message $AMSHUMG$. The one-time pad must be at least as long as the message.
+
+Implement a program in Python that
+\begin{enumerate}
+\item takes a plaintext message in a string;
+\item takes a one-time pad in a string;
+\item prints the encrypted ciphertext obtained by adding each letter of the plaintext message to the corresponding letter in the one-time pad.
+\end{enumerate}
+\end{enumerate}
+\vfill
+
+
+\end{document}

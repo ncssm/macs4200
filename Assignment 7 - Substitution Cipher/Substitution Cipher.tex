@@ -1,0 +1,51 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Substitution Cipher
+\end{center}
+
+
+A substitution cipher is a method of encryption in which each letter of the alphabet is replaced by another letter of the alphabet. The substituted letter may be the same as the original letter, but two distinct letters may not be substituted with the same letter. As an example, suppose in a message the letter B is always replaced by the letter Q, then no other letter may be replaced by the letter Q. Put another way, if we define the plaintext alphabet in Python by the string "ABCDEFGHIJKLMNOPQRSTUVWXYZ", then a valid substitution alphabet may be "QWERTYUIOPASDFGHJKLZXCVBNM", while the substitution alphabet "AAAAAAAAAAAAAAAAAAAAAAAAAA" is not valid.
+
+\begin{enumerate}
+\item Implement a program in Python that 
+\begin{enumerate}
+\item prompts the user whether to encrypt or decrypt a message;
+\item prompts the user for the plaintext or ciphertext message;
+\item prompts the user for a substitution alphabet and checks to make sure it is valid for substitution;
+\item prints the encrypted or decrypted message as a string.
+\end{enumerate}
+\item What would go wrong if the restrictions were removed for a substitution alphabet to be considered ``valid?" Why is this undesirable?
+\item We have discussed several cipher methods in this course including the additive Caesar, One-Time Pad, and Vigenere. Which of these are also considered substitution ciphers? Explain your answer.
+\end{enumerate}
+\vfill
+
+
+\end{document}

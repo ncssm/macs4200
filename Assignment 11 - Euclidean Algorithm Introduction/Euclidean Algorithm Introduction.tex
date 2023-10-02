@@ -1,0 +1,85 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Introduction to the Euclidean Algorithm
+\end{center}
+
+
+\begin{enumerate}
+\item Without using a computer, use the Euclidean algorithm to compute the greatest common divisor of the following pairs of integers. How many steps does each computation take?
+\begin{enumerate}
+\item $gcd(468,864)$
+\item $gcd(11111,111111)$
+\end{enumerate}
+
+\item Let $n$ be a positive integer. Use the Euclidean Algorithm to compute $gcd(n+1,n)$.
+
+\item We know that every algorithm must terminate in a finite number of steps. Explain why the Euclidean algorithm is guaranteed to terminate in a finite number of steps.
+
+\item Without using a computer, use the Euclidean algorithm to compute the greatest common divisor of the following pairs of Fibonacci numbers. How many steps does each computation take? 
+\begin{enumerate}
+\item $gcd(F_3,F_2)$
+\item $gcd(F_4,F_3)$
+\item $gcd(F_5,F_4)$
+\item $gcd(F_6,F_5)$
+\end{enumerate}
+
+\item Make a conjecture regarding the number of steps needed to compute $gcd(F_{n+1},F_n)$ using the Euclidean algorithm.
+
+\item Let $a$ and $b$ be two positive integers such that $a>b$. Suppose it takes exactly $n$ steps to compute $gcd(a,b)$ using the Euclidean algorithm. This means that the $gcd(a,b)$ can be obtained from the following steps.
+\begin{align*}
+a&=bq_1+r_1 \text{ where } 0\leq r_1< b\text{ and } q_1\geq 1\\
+b&=r_1q_2+r_2 \text{ where } 0\leq r_2< r_1\text{ and } q_2\geq 1\\
+r_1&=r_2q_3+r_3 \text{ where } 0\leq r_3< r_2\text{ and } q_3\geq 1\\
+\vdots\\
+r_{n-5}&=r_{n-4}q_{n-3}+r_{n-3} \text{ where } 0\leq r_{n-3}< r_{n-4}\text{ and } q_{n-3}\geq 1\\
+r_{n-4}&=r_{n-3}q_{n-2}+r_{n-2} \text{ where } 0\leq r_{n-2}< r_{n-3}\text{ and } q_{n-2}\geq 1\\
+r_{n-3}&=r_{n-2}q_{n-1}+r_{n-1} \text{ where } 0\leq r_{n-1}< r_{n-2}\text{ and } q_{n-1}\geq 1\\
+r_{n-2}&=r_{n-1}q_{n}+0 \text{ where } q_n\geq 1
+\end{align*}
+\begin{enumerate}
+\item Explain why $r_{n-1}\geq 1$. (Hint: Why can't we have that $r_{n-1}=0$?)
+\item Show why $r_{n-2}\geq 1$.
+\item Show why $r_{n-3}\geq 2$.
+\item Show why $r_{n-4}\geq 3$.
+\item Show why $r_{n-5}\geq 5$.
+\item Make a conjecture about the smallest possible value of $b$.
+\item Make a conjecture about the smallest possible value of $a$.
+\end{enumerate}
+
+\item Using your conjectures above, what can be said about the number of digits in $a$ and $b$ if it takes $100$ steps to compute $gcd(a,b)$ using the Euclidean algorithm?
+
+\item Let $a$ and $b$ be $100$ digit positive integers such that $a>b$. At most how many steps would it take to compute $gcd(a,b)$ using the Euclidean algorithm?
+
+\end{enumerate}
+\vfill
+
+
+\end{document}

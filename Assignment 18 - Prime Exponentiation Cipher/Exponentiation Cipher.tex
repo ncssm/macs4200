@@ -1,0 +1,58 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+\usepackage[margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+The Repeated Squaring Algorithm and the Prime Exponentiation Cipher
+\end{center}
+
+
+
+\begin{enumerate}
+\item Using Python, write a function which
+\begin{enumerate}
+\item accepts integers $a$, $b$, and $n$ as arguments;
+\item implements the repeated squaring algorithm without using the pow(a,b,n) function;
+\item returns the value of $a^b\mod n$.
+\end{enumerate}
+
+\item Using Python, write a function which
+\begin{enumerate}
+\item accepts an integer message, exponential key (integer), a modulus $p$ (prime integer), and a boolean variable as arguments;
+\item checks that the key is valid;
+\item performs the exponential encryption to the integer message modulo $p$ if the boolean variable is TRUE and performs the exponential decryption to the integer message modulo $p$ if the boolean variable is FALSE;
+\item prints the encrypted/decrypted integer message.
+\end{enumerate}
+\item Suppose we publicly broadcast the modulus $p$ and the encryption exponent $e$ of the prime exponentiation cipher so that anyone can encrypt a message. This is called a {\bf public key encryption} scheme. If the decryption exponent $d$ is kept private (and not publicly broadcast), explain how an attacker would still be able to decrypt an intercepted ciphertext message.
+\item Suppose we intercept the following ciphertext message. $$265447333455441482929244853322644679466$$ This message was encrypted using the public key encryption scheme outlined in the previous problem where the prime modulus is 
+
+\noindent $p=1111111112223333333344455566777777779999$ and the encryption exponent is $e=19088892923$. Decrypt the message.
+\end{enumerate}
+
+
+\end{document}

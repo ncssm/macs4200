@@ -1,0 +1,56 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Prime and Composite Numbers
+\end{center}
+
+\begin{enumerate}
+
+\item Determine whether the following numbers are prime or composite. Record the number of seconds needed to determine each result.
+\begin{enumerate}
+\item $116666666666611$
+\item $1000000000100011$
+\item $13000000000000019$
+\item $12345689798654321$
+\end{enumerate}
+
+\item Consider an ideal computer with a $4$ gigahertz processor which can perform $4$ billion arithmetic operations per second. Approximately how many seconds would it take such a computer running your program to verify that a $20$ digit number is prime? What about a $200$ digit number? How many seconds old is the universe?
+
+\item Let $\pi(n)$ be the number of prime numbers less than an integer $n$. For example, $\pi(10)=4$, and $\pi(20)=8$. Write a program in Python to compute $\pi(100000)$. 
+
+Note: The {\bf Sieve of Eratosthenes} from class will be useful.
+
+\item The Prime Number Theorem states that $$\lim_{n\rightarrow\infty}\frac{\pi(n)}{\frac{n}{\ln(n)}}=1,$$ which means that $\pi(n)$ is approximately equal to $\frac{n}{\ln(n)}$ whenever $n$ is large. Demonstrate the Prime Number Theorem using a few large numbers $n$.
+
+\item Using the Prime Number Theorem, approximate the number of $10$ digit prime numbers. Approximate the probability that a US phone number is a prime number.
+
+\item The twin prime conjecture states that there are infinitely many prime numbers $p$ such that $p+2$ or $p-2$ is also prime. As examples, $3$ and $5$ are twin primes, so are $17$ and $19$. Write a program in Python that creates a list of the first $1000$ twin primes.
+\end{enumerate}
+\end{document}

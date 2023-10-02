@@ -1,0 +1,55 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm,graphicx,verbatim,amsbsy}
+
+\usepackage[margin=1in]{geometry}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{noname}[theorem]{}
+\newtheorem{sublemma}{}[theorem]
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+
+\begin{flushright}
+Name:\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{flushright}
+\vspace{10pt}
+\begin{center}
+Introduction to Cryptography
+
+Modular Arithmetic Properties
+\end{center}
+
+Answer the following questions.
+
+\begin{enumerate}
+\item Without using a calculator, find the remainder whenever the following quantities are divided by $2$, $4$, $9$, and $11$.
+\begin{enumerate}
+\item $840971832313256$
+\item $1486\cdot2365\cdot63704\cdot186474$
+\item $1486+2365+63704+186474$
+\end{enumerate}
+\vspace{2pt}
+\item Find the value of the missing digit $k$ so that the number $4052830k9582$ is divisible by $9$.
+\vspace{2pt}
+\item A number is called a palindrome the digits read forward are the same as the digits read backwards. For example. $14641$ and $2332$ are both palindromes. Show that all $4$ digit palindromes $ABBA$ are divisible by $11$. 
+\vspace{2pt}
+\item Without using a calculator, find the last digit of $123^{456}$.
+\vspace{2pt}
+\item Let $A$ be some integer, and let $B$ be an integer obtained by permuting the digits of $A$ in some unknown way. Find $X$, where $X$ is the last digit of $A-B=314159X$. (Hint: $A$ and $B$ have the same digits, so what is their remainder when divided by $9$?)
+\end{enumerate}
+\vfill
+
+
+\end{document}
